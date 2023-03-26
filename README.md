@@ -138,6 +138,12 @@ pdm install
 git init
 ```
 
+# Activate Virtual Environment
+
+```bash
+eval $(pdm venv activate)
+```
+
 
 # References
 
