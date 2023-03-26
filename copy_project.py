@@ -9,6 +9,7 @@ exclusions = (
     '01_setup_pdm_toml.sh',
     'copy_project.py',
     '.git/',
+    '.venv/',
     'README.md',
     '.pdm.toml',
 )
