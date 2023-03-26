@@ -5,7 +5,7 @@
 * asyncpg
 * dotenv
 
-# Targets
+# Purposes
 1. support asyncio based on fastapi
 
 2. only one root module
@@ -42,7 +42,7 @@ or
 * project.authors
 
 
-### 2.3. using PySide6 and cx_freeze together
+### 2.3. using PySide6 and cx_freeze together (optional)
 
 ```toml
 [build-system]
@@ -126,7 +126,7 @@ git init
 ```
 
 
-# Etc
+# References
 
 ## pdm install
 
