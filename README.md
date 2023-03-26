@@ -84,7 +84,20 @@ def include_object(object, name, type_, reflected, compare_to):
 
 ## 4. update `.env` file
 
-1. edit .env for setting database up
+1) edit .env for setting database up
+
+```bash
+DB_USER=<DB_USER>
+DB_PASS=<DB_PASSWORD>
+DB_HOST=<DB_HOST>
+DB_PORT=<DB_PORT>
+DB_NAME=<DB_NAME>
+
+DB_ECHO=true
+DB_POOL_PRE_RING=true
+
+LOG_LEVEL = debug
+```
 
 
 ## 5. sqlalchemy
