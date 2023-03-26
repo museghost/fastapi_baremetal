@@ -50,7 +50,6 @@ requires = ["pdm-backend"]
 build-backend = "pdm.backend"
 ```
 
-
 ## 3. alembic
 
 ### 3.1. folders
@@ -88,13 +87,39 @@ def include_object(object, name, type_, reflected, compare_to):
 1. edit .env for setting database up
 
 
-## 5. pdm install
+## 5. sqlalchemy
+
+### 5.1. using sqlmodel together
+as of March 26 2023, sqlmodel is 0.0.8
+
+To support the above sqlmodel, currently `1.4.41` version of sqlalchemy is required. (Not supported 2.x)
+
+```bash
+pdm add sqlalchemy==1.4.41
+```
+
+### 5.2. async db session
+
+using fastapi_async_sqlalchemy with 0.3.14 version
+
+```python
+from fastapi_async_sqlalchemy import db
+
+async db.session.execute(....)
+```
+
+
+```bash
+pdm add git+https://github.com/h0rn3t/fastapi-async-sqlalchemy.git
+```
+
+## 6. pdm install
 
 ```bash
 pdm install
 ```
 
-## 6. git (optional)
+## 7. git (optional)
 
 ```bash
 git init
