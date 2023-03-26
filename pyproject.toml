@@ -1,0 +1,18 @@
+[project]
+name = "fastapi_baremetal"
+version = "0.0.1"
+description = "a baremetal project strucure"
+authors = [
+    {name = "TODO", email = "TODO@TODO.com"},
+]
+dependencies = [
+]
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+#[build-system]
+#requires = ["pdm-backend"]
+#build-backend = "pdm.backend"
+
+[tool]
+[tool.pdm]

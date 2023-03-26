@@ -8,6 +8,9 @@
 # Targets
 1. support asyncio based on fastapi
 
+2. only one root module
+
+
 
 # How to do that
 
@@ -19,11 +22,32 @@ pyenv local 3.9.16
 
 ## 2. pdm
 
-* configure virtual environment
+### 2.1. configure virtual environment
 
 ```bash
 pdm config --local venv.in_project True
 pdm config --local venv.backend venv
+```
+
+or
+
+```bash
+./01_setup_pdm_toml.sh
+```
+
+### 2.2. edit pyproject.toml
+
+* project.name
+* project.version
+* project.authors
+
+
+### 2.3. using PySide6 and cx_freeze together
+
+```toml
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
 ```
 
 
